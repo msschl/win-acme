@@ -19,7 +19,7 @@ namespace PKISharp.WACS.Plugins.ValidationPlugins.Dns
 
         private ArgumentResult<bool?> UseHetznerCloud => _arguments
             .GetBool<HetznerArguments>(a => a.UseHetznerCloud)
-            .WithDefault(true);
+            .WithDefault(false);
 
         private ArgumentResult<string?> ZoneId => _arguments
             .GetString<HetznerArguments>(a => a.HetznerZoneId)
